@@ -1,32 +1,51 @@
+// S2E25 : zoom effect__________________________________________
+ 
+
+
+
+
+
+
+
+
 // S2E24 : expend & shrink image with timing event_______________
-let IntervalID;
-let width = 500;
-let unit = 2;
-function increase() {
-  IntervalID = setInterval(expand, 20)
-}
-function expand() {
-  if (width < 600) {
-    width = width + Uint16Array;
-    document.getElementById('img1').width = width
-  } else {
-    clearInterval(IntervalID)
-  }
-}
-function decrease() {
-  IntervalID = setInterval(shrink, 20)
-}
-function shrink() {
-  if (width > 500) {
-    width = width - unit;
-    document.getElementById('img1').width = width
-  } else {
-    clearInterval(IntervalID)
-  }
-}
-
-
-
+// let IntervalID;
+// let width = 500;
+// let unit = 2;
+// function increase() {
+//   IntervalID = setInterval(expand, 20)
+// }
+// function expand() {
+//   if (width < 600) {
+//     width = width + unit;
+//     document.getElementById('img1').width = width
+//   } else {
+//     clearInterval(IntervalID)
+//   }
+// }
+// function decrease() {
+//   IntervalID = setInterval(shrink , 20)
+// }
+// function shrink() {
+//   if (width > 500) {
+//     width = width - unit;
+//     document.getElementById('img1').width = width
+//   } else {
+//     clearInterval(IntervalID)
+//   } 
+// }
+// index.html code
+{/* <body>
+  <img 
+    src="https://www.teahub.io/photos/full/179-1796899_anime-wallpaper-hd-wallpaper-anime-face-hair-mask..jpg"
+    alt="image"
+    id="img1"
+    style="height: 500px;"
+    width : 500;
+    onmouseover="increase()"
+    onmouseout="decrease()"
+  /> 
+</body> */}
 
 
 

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+  <title>taking input</title>
+  <script src="test.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="welcome.html" onsubmit="return validate()" >
+    <input type="text" id="username" placeholder="username"/>
+    <label id="usError" style="color: red; display: none;">Invalid username</label>
+    <br /><br />
+    <input type="password" id="password" placeholder="password"/>
+    <label id="passError" style="color: red; display: none;">Invalid password</label>
+    <br /><br />
+    <input type="submit" value="login"/>
+  </form>
+</body>
+</html>  

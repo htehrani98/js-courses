@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <title>taking input</title>
+  <script src="test.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="text" id="username" placeholder="username">
+  <br>
+  <input type="password" id="password" placeholder="password">
+  <button onclick="textInputHandler()">
+    getValueTextInput
+  </button>
+  <hr>
+  <input type="radio" name="fruit" value="banana" id="banana" checked>banana</input>
+  <input type="radio" name="fruit" value="apple" id="apple">apple</input>
+  <button onclick="radioButtonHandler()">
+    getValueRadioButton
+  </button>
+  <hr/>
+  <select id="selectBox">
+    <option value="banana">banana</option>
+    <option value="apple">apple</option>
+  </select>
+  <button onclick="selectOptionHandler()">
+    getValueSelectOption
+  </button>
+  <hr>
+  <form name="myForm" action="#">
+    <label for="name">Name</label>
+    <input type="text" name="name" value="reza">
+    <br>
+    <label for="color">Color</label>
+    <select name="color" id="color">
+      <option value="banana">banana</option>
+      <option value="apple">apple</option>
+    </select>
+  </form>
+</body>
+</html>
