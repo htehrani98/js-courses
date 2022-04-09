@@ -5,36 +5,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <input type="text" id="username" placeholder="username">
-  <br>
-  <input type="password" id="password" placeholder="password">
-  <button onclick="textInputHandler()">
-    getValueTextInput
-  </button>
-  <hr>
-  <input type="radio" name="fruit" value="banana" id="banana" checked>banana</input>
-  <input type="radio" name="fruit" value="apple" id="apple">apple</input>
-  <button onclick="radioButtonHandler()">
-    getValueRadioButton
-  </button>
-  <hr/>
-  <select id="selectBox">
-    <option value="banana">banana</option>
-    <option value="apple">apple</option>
-  </select>
-  <button onclick="selectOptionHandler()">
-    getValueSelectOption
-  </button>
-  <hr>
-  <form name="myForm" action="#">
-    <label for="name">Name</label>
-    <input type="text" name="name" value="reza">
-    <br>
-    <label for="color">Color</label>
-    <select name="color" id="color">
-      <option value="banana">banana</option>
-      <option value="apple">apple</option>
-    </select>
+  <form action="welcome.html" onsubmit="return validate()" >
+    <input type="text" id="username" placeholder="username"/>
+    <label id="usError" style="color: red; display: none;">Invalid username</label>
+    <br /><br />
+    <input type="password" id="password" placeholder="password"/>
+    <label id="passError" style="color: red; display: none;">Invalid password</label>
+    <br /><br />
+    <input type="submit" value="login"/>
   </form>
+  <div id="message" style="color: red;"></div>
 </body>
-</html>
+</html>  

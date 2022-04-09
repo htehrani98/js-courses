@@ -1,23 +1,18 @@
-function textInputHandler(){
-  const username = document.getElementById('username').Value;
-  const password = document.getElementById('password').value;
-  console.log(password)
-}
-function radioButtonHandler(){
-  const apple = document.getElementById('apple')
-  const banana = document.getElementById('banana')
-  if(banana.checked){
-    console.log('The fruit selected is '+banana.value)
-  }else if(apple.checked){
-    console.log('The fruit selected is '+apple.value)
+function validate() {
+  const username = document.getElementById('username')
+  const password = document.getElementById('password')
+  const message = document.getElementById('message')
+  const usError = document.getElementById('usError')
+  if (username.value.trim() === '' || password.value.trim() === '') {
+//    message.innerText = "you must fill all input"
+    alert('you must fill all input')
+    username.style.border = '3px solid red'
+    usError.style.display='block'
+    message.innerText = "you must inter username correct"
+    return false
   }
-}
-function selectOptionHandler(){
-  const selectBox = document.getElementById('selectBox');
-  console.log(selectBox.option[selectBox.selectedIndex].value)
-}
-window.onload = function(){
-  const form = document.forms.myForm
-  console.log(form.name.value)
-  console.log(form.color.value)
+  else {
+    message.innerText = ""
+    return true
+  }
 }
