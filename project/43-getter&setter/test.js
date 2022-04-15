@@ -1,22 +1,47 @@
 function Course(title) {
   this.title = title;
-  let students = []
+  let students = [];
   this.print = function () {
-    console.log(this.title, students)
-  }
-  Object.defineProperty(this, 'students', {
+    console.log(this.title, students);
+  };
+  Object.defineProperty(this, "students", {
     get: function () {
-      return students
-    },set:function(value){
-      if(value.length<1){
-        throw new Error('invalid data')
+      return students;
+    },
+    set: function (value) {
+      if (value.length < 1) {
+        throw new Error("invalid data");
       }
-      students = value
-    }
-  })
+      students = value;
+    },
+  });
 }
-const jsCourse = new Course('js')
+const jsCourse = new Course("js");
 // console.log(jsCourse.title)
-jsCourse.print()
-jsCourse.students = ['reza']
-console.log(jsCourse.students) 
+jsCourse.print();
+jsCourse.students = ["reza"];
+console.log(jsCourse.students);
+
+/**
+ *
+ *
+ * js: v es5
+ */
+class Course {
+  constructor(_title) {
+    this.title = _title;
+    this.students = [];
+
+    this.print = function () {
+      console.log(this.title, students);
+    };
+  }
+
+  get getStudents() {
+    return this.students;
+  }
+
+  set setStudents(s) {
+    this.students = s;
+  }
+}
