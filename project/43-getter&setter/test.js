@@ -35,6 +35,10 @@ class Course {
     this.print = function () {
       console.log(this.title, this.students);
     };
+
+    this.getStudents2 = function () {
+       return this.students;
+    }
   }
 
   get getStudents() {
