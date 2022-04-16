@@ -37,8 +37,8 @@ class Course {
     };
 
     this.getStudents2 = function () {
-       return this.students;
-    }
+      return this.students;
+    };
   }
 
   get getStudents() {
@@ -50,7 +50,11 @@ class Course {
   }
 }
 const jsCourse = new Course("js");
+
+const x = jsCourse.getStudents;
+const y = jsCourse.getStudents2();
+
 // console.log(jsCourse.title)
 jsCourse.print();
-jsCourse.students = ['rez', 'mary', 'ali'];
+jsCourse.students = ["rez", "mary", "ali"];
 console.log(jsCourse.students);
