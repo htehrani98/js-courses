@@ -1,0 +1,14 @@
+{
+  "name": {
+    "first": "hassan",
+    "last": "motevali"
+  },
+  "age": 21,
+  "married": false,
+  "children": null,
+  "praying_days": ["sat", "sun", "mon"],
+  "friends": [
+    { "name": "HamidReza", "age": 22 },
+    { "name": "Ali", "age": 24 }
+  ]
+}
